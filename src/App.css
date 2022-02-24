@@ -25,11 +25,12 @@ h2 {
   color: white;
   font-family: cursive;
   font-size: 2.5rem;
-  margin-left: 25%;
+  margin-bottom: 25px;
+  margin-left: 15%;
   margin-top: 25px;
   text-align: center;
   text-shadow: 0 0 10px rgb(13, 247, 255);
-  width: 50%;
+  width: 70%;
 }
 
 .solarSystem {
@@ -79,27 +80,66 @@ h2 {
 }
 
 .planetDiv {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.planetDiv div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  width: fit-content;
+}
+
+.planetDiv div img:hover {
+  filter: brightness(120%);
+}
+
+p, h3 {
+  color: white;
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.missions {
+  width: 100%;
+}
+
 .missionBigDiv {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 25%;
-  margin-top: 30px;
-  width: 50%;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 15%;
+  width: 70%;
 }
 
-p {
-  color: white;
-}
-
-.missionSmallDiv {
+.missionCard {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
-  margin-bottom: 10px;
-  padding: 30px;
+  flex-grow: 1;
+  margin: 15px;
+  width: 600px;
+}
+
+.missionCard:hover {
+  background-color: rgba(126, 156, 158, 0.7);
+}
+
+.missionCard div {
+  padding: 1.5rem;
+}
+
+.missionCard header {
+  border-bottom: 4px dotted white;
+  padding: 1rem;
+}
+
+.missionCard header h3 {
+  font-size: 3rem;
+  font-weight: 900;
 }

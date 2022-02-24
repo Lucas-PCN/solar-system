@@ -6,6 +6,7 @@ import Missions from './components/Missions';
 
 class App extends React.Component {
   render() {
+    document.title = 'Sistema Solar';
     return (
       <div>
         <Header />
