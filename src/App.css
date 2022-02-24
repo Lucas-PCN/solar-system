@@ -123,6 +123,8 @@ p, h3 {
   border-radius: 15px;
   flex-grow: 1;
   margin: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   width: 600px;
 }
 
